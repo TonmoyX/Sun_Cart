@@ -9,7 +9,7 @@ const Brands = () => {
                 <div className="card-body">
                     <h2 className="text-4xl mb-2 font-bold">Hydration 💧</h2>
                     <p className='text-sm text-shadow-indigo-200'>Drink 2–3 liters of water daily. Add fruits like lemon or cucumber for better hydration.</p>
-                    <div className="card-actions ">
+                    <div className="card-actions justify-end">
                     </div>
                 </div>
                 </div>
