@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for summer outings.",
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=400",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Portable Handheld Fan",
+    "brand": "BreezeGo",
+    "price": 12,
+    "rating": 4.5,
+    "stock": 25,
+    "description": "Rechargeable mini fan with 3 speed settings for instant cooling.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmJ3R-qdhlwEIzeuhr_3S32B_Urc-wseen5A&s",
+    "category": "Electronics"
+  },
+  {
+    "id": 3,
+    "name": "Quick-Dry Beach Towel",
+    "brand": "SandFree",
+    "price": 22,
+    "rating": 4.8,
+    "stock": 15,
+    "description": "Large microfiber towel that dries 3x faster than cotton and repels sand.",
+    "image": "https://images.unsplash.com/photo-1576426863848-c21f53c60b19?auto=format&fit=crop&q=80&w=400",
+    "category": "Outdoor"
+  },
+  
+  {
+    "id": 4,
+    "name": "SPF 50 Mineral Sunscreen",
+    "brand": "PureSun",
+    "price": 18,
+    "rating": 4.6,
+    "stock": 50,
+    "description": "Non-greasy, water-resistant mineral sunscreen safe for sensitive skin.",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=400",
+    "category": "Skincare"
+  },
+  {
+    "id": 5,
+    "name": "Waterproof Phone Pouch",
+    "brand": "AquaGuard",
+    "price": 10,
+    "rating": 4.7,
+    "stock": 40,
+    "description": "Universal waterproof case for smartphones, perfect for swimming and snorkeling.",
+    "image": "https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?auto=format&fit=crop&q=80&w=400",
+    "category": "Electronics"
+  },
+  {
+    "id": 6,
+    "name": "Flip-Flops",
+    "brand": "ShoreStep",
+    "price": 14,
+    "rating": 4.3,
+    "stock": 60,
+    "description": "Comfortable and durable rubber flip-flops for casual summer wear.",
+    "image": "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&q=80&w=400",
+    "category": "Footwear"
+  },
+  {
+    "id": 7,
+    "name": "Cooler Bag",
+    "brand": "ChillTrip",
+    "price": 32,
+    "rating": 4.5,
+    "stock": 14,
+    "description": "Leak-proof insulated cooler bag for keeping snacks and drinks fresh on picnics.",
+    "image": "https://images.unsplash.com/photo-1583209814683-c023dd293cc6?auto=format&fit=crop&q=80&w=400",
+    "category": "Outdoor"
+  },
+  {
+    "id": 8,
+    "name": "Beach Ball",
+    "brand": "PlayWave",
+    "price": 8,
+    "rating": 4.2,
+    "stock": 100,
+    "description": "Classic multi-colored inflatable beach ball for family fun.",
+    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?auto=format&fit=crop&q=80&w=400",
+    "category": "Outdoor"
+  }
+]
