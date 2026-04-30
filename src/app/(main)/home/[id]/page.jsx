@@ -9,9 +9,9 @@ const ProductDetails = async ({ params }) => {
     const data = await res.json();
 
     const product = data.filter(item => item.id == id)
-    console.log(product)
+    // console.log(product)
     return (
-        <div className='flex flex-col mx-auto mt-20'>
+        <div className='flex flex-col mx-auto mt-20 mb-15'>
             {
                 product.map(pro => {
                     return (
