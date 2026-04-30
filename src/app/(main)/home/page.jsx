@@ -1,4 +1,5 @@
 import Banner from '@/component/banner/banner';
+import Brands from '@/component/brand/brand';
 import Cards from '@/component/products/cards';
 import SummerTips from '@/component/summerTips/tips';
 import React from 'react';
@@ -11,6 +12,7 @@ const HomePage = async () => {
             <Banner />
             <Cards data = {data}></Cards>
             <SummerTips></SummerTips>
+            <Brands></Brands>
         </div>
     );
 };
