@@ -1,10 +1,10 @@
 import React from 'react';
-
-const ProductsPage = () => {
+import ProductsCards from '@/component/products/ProductsCards';
+const ProductsPage = async () => {
+  const res = await fetch('http://localhost:3000/data.json');
+    const data = await res.json();
     return (
-        <div>
-            Products Page
-        </div>
+       <ProductsCards data={data}></ProductsCards>
     );
 };
 

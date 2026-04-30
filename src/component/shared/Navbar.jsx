@@ -27,8 +27,9 @@ const Navbar = () => {
                             className="menu gap-4  menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             {/* link */}
                             <li className='font-semibold'><NavLink href='/'>Home</NavLink></li>
-                            <li className='font-semibold'><NavLink href='product '>Product</NavLink></li>
-                            <li className='font-semibold'><NavLink href='/na'>My Profile</NavLink></li>
+                            <li className='font-semibold'><NavLink href='product '>Products</NavLink></li>
+                            {!user && <li className='font-semibold '><NavLink href='/signin'>My Profile</NavLink></li>}
+                            {user && <li className='font-semibold'><NavLink href='/profile'>My Profile</NavLink></li>}
                         </ul>
                     </div>
                     <Link href={'/'} className=" text-xl font-extrabold text-pink-400">Sun<span className='text-purple-500 font-extrabold'>Cart</span></Link>
@@ -36,8 +37,9 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu gap-4 menu-horizontal px-1">
                         <li className='font-semibold'><NavLink href='/'>Home</NavLink></li>
-                        <li className='font-semibold'><NavLink href='/product'>Product</NavLink></li>
-                        <li className='font-semibold'><NavLink href='/na'>My Profile</NavLink></li>
+                        <li className='font-semibold'><NavLink href='/product'>Products</NavLink></li>
+                        {!user && <li className='font-semibold'><NavLink href='/signin'>My Profile</NavLink></li>}
+                        {user && <li className='font-semibold'><NavLink href='/profile'>My Profile</NavLink></li>}
                     </ul>
                 </div>
                 {!user && <div className="navbar-end">

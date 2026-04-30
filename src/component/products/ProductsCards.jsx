@@ -5,13 +5,13 @@ import Link from 'next/link';
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 
-const Card = ({ data }) => {
+const ProductsCards = ({data}) => {
     const userData = authClient.useSession();
     const user = userData.data?.user;
     return (
-        <div className='grid grid-cols-3 gap-5 mt-10 mx-auto justify-center'>
+        <div className='grid grid-cols-3 gap-5 mt-10 mx-auto justify-center mb-15'>
             {
-                data.slice(0, 3).map(data => {
+                data.map(data => {
                     return (
                         <div key={data.id}>
                             <div className="card bg-base-100 w-96 shadow-sm h-[400px]">
@@ -35,11 +35,12 @@ const Card = ({ data }) => {
                                     </div>
 
                                     {
-                                        user && <Link href={`/home/${data.id}`}><button className="btn w-full bg-gradient-to-r from-pink-400 to-purple-500 text-white font-semibold rounded-full mt-5">View Details</button></Link>
+                                    user && <Link href={`/home/${data.id}`}><button className="btn w-full bg-gradient-to-r from-pink-400 to-purple-500 text-white font-semibold rounded-full mt-5">View Details</button></Link>
                                     }
                                     {
                                         !user && <Link href={'/signin'}><button className="btn w-full bg-gradient-to-r from-pink-400 to-purple-500 text-white font-semibold rounded-full mt-5">View Details</button></Link>
-                                    }                </div>
+                                    }
+                                </div>
                             </div>
                         </div>
 
@@ -50,4 +51,4 @@ const Card = ({ data }) => {
     );
 };
 
-export default Card;
+export default ProductsCards;
