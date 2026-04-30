@@ -9,12 +9,12 @@ const Card = ({ data }) => {
     const userData = authClient.useSession();
     const user = userData.data?.user;
     return (
-        <div className='grid grid-cols-3 gap-5 mt-10 mx-auto justify-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mx-auto container'>
             {
                 data.slice(0, 3).map(data => {
                     return (
                         <div key={data.id}>
-                            <div className="card bg-base-100 w-96 shadow-sm h-[400px]">
+                            <div className="card bg-base-100 w-full shadow-sm h-[400px]">
                                 <figure className="px-10 pt-10">
                                     <Image
                                         width={360} height={260}

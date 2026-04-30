@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className='bg-gradient-to-r from-pink-800 to-purple-900'>
             <div className='pb-10 border-b-1 border-gray-500'>
-                <h1 className='text-8xl text-center font-extrabold pt-5 bg-gradient-to-r from-pink-400 to-purple-500 text-transparent bg-clip-text'>SunCart</h1>
+                <h1 className='text-5xl lg:text-8xl text-center font-extrabold pt-5 bg-gradient-to-r from-pink-400 to-purple-500 text-transparent bg-clip-text'>SunCart</h1>
                 <p className='mt-4 text-center text-white text-xl font-semibold'>SunCart is an e-commerce platform dedicated to providing<br></br> safe and reliable summer products to valuable client</p>
                 <p className='mt-4 text-center text-white text-3xl font-bold'>Social Link</p>
                 <div className='flex gap-4 text-2xl text-white mx-auto justify-center mt-2'>
@@ -15,11 +15,11 @@ const Footer = () => {
                     <p><FaYoutube /></p>
                 </div>
             </div>
-            <div className='pt-10 w-300 pb-5 flex justify-between mx-auto'>
+            <div className='pt-10 md:px-30 text-center lg:px-50 pb-5 md:flex justify-between mx-auto'>
              <div>
                 <h1 className='text-sm text-gray-300'>© 2026 SunCart | All rights reserved.</h1>
              </div>
-             <div className='flex gap-3 text-gray-300 text-sm'>
+             <div className='md:flex gap-3  text-gray-300 text-sm'>
                 <p>Privacy & Policy</p>
                 <p>Terms & Condition</p>
              </div>

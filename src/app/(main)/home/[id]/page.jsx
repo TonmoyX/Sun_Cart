@@ -16,7 +16,7 @@ const ProductDetails = async ({ params }) => {
                 product.map(pro => {
                     return (
                         <div key={pro.id}>
-                            <div className="card md:flex md:flex-row h-100 lg:w-300 bg-base-100 shadow-sm">
+                            <div className="card flex flex-col md:flex-row h-100 lg:w-300 bg-base-100 shadow-sm">
                                 <figure>
                                     <Image
                                         width={660} height={560}
