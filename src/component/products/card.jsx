@@ -35,7 +35,7 @@ const Card = ({ data }) => {
                                     </div>
 
                                     {
-                                        user && <Link href={`/home/${data.id}`}><button className="btn w-full bg-gradient-to-r from-pink-400 to-purple-500 text-white font-semibold rounded-full mt-5">View Details</button></Link>
+                                        user && <Link href={`/home/${data.id}`}><button className="btn bg-gradient-to-r from-pink-400 to-purple-500 text-white font-semibold rounded-full mt-5">View Details</button></Link>
                                     }
                                     {
                                         !user && <Link href={'/signin'}><button className="btn w-full bg-gradient-to-r from-pink-400 to-purple-500 text-white font-semibold rounded-full mt-5">View Details</button></Link>
