@@ -4,6 +4,8 @@ import NavLink from './NavLink';
 import Link from 'next/link';
 import { authClient } from '@/lib/auth-client';
 import Image from 'next/image';
+import { FaOpencart } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const Navbar = () => {
     const userData = authClient.useSession()
@@ -31,7 +33,7 @@ const Navbar = () => {
                             {user && <li className='font-semibold'><NavLink href='/profile'>My Profile</NavLink></li>}
                         </ul>
                     </div>
-                    <Link href={'/'} className=" text-xl font-extrabold text-pink-400">Sun<span className='text-purple-500 font-extrabold'>Cart</span></Link>
+                    <Link href={'/'} className=" text-2xl font-extrabold text-pink-400 flex gap-2 items-center"><FaOpencart className='text-6xl' />Sun<span className='text-purple-500 font-extrabold'>Cart</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu gap-4 menu-horizontal px-1">
@@ -42,7 +44,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 {!user && <div className="navbar-end">
-                    <Link href={'/signin'} className="btn bg-gradient-to-r from-pink-400 to-purple-500 text-white font-bold">SignIn</Link>
+                    <Link href={'/signin'} className="btn bg-gradient-to-r p-4 from-pink-400 to-purple-500 text-white font-bold">SignIn</Link>
                 </div>
                 }
                 {user && <div className="navbar-end gap-4">

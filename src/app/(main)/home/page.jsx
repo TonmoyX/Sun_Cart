@@ -3,14 +3,15 @@ import Brands from '@/component/brand/brand';
 import Cards from '@/component/products/cards';
 import SummerTips from '@/component/summerTips/tips';
 import React from 'react';
-// homE pAGE
+
 const HomePage = async () => {
-    const res = await fetch(`${process.env.BETTER_AUTH_URL}/data.json`);
+    const res = await fetch(`http://localhost:3000/data.json`);
+    // const res = await fetch(`${process.env.BETTER_AUTH_URL}/data.json`);
     const data = await res.json();
     return (
         <div className=''>
             <Banner />
-            <Cards data = {data}></Cards>
+            <Cards data={data}></Cards>
             <SummerTips></SummerTips>
             <Brands></Brands>
         </div>

@@ -1,7 +1,6 @@
 'use client'
 import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
-import { RedirectType, redirect } from 'next/navigation';
 import React from 'react';
 import { IoLogoGoogle } from 'react-icons/io';
 import { toast } from 'react-toastify';
@@ -17,13 +16,13 @@ const SignInPage = () => {
             password: userData.password,
             callbackURL: '/home'
         });
-       
+
     }
-     const handleGoogleSignIn = async () => {
-            const data = await authClient.signIn.social({
-                provider: "google",
-            });
-        }
+    const handleGoogleSignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+    }
 
     return (
         <div className='container mx-auto justify-center mt-10'>
@@ -37,8 +36,9 @@ const SignInPage = () => {
                     <label className="label">Password</label>
                     <input type="password" name='password' className="input" placeholder="Password" />
 
-                    <button className="btn btn-neutral mt-4">Login</button>
+                    <button className="btn btn-neutral mt-4">SignIn</button>
                     <p className="text-center">or</p>
+
                     <button onClick={handleGoogleSignIn} className="btn btn-primary text-white"><IoLogoGoogle /> Signin with google</button>
                     <p className='text-center text-lg'>You have no account ? <Link href={'/signup'}><span className='text-blue-600'>SignUp</span></Link></p>
                 </fieldset>

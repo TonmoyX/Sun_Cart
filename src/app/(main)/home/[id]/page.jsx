@@ -4,8 +4,8 @@ import React from 'react';
 
 const ProductDetails = async ({ params }) => {
     const { id } = await params;
-
-    const res = await fetch(`${process.env.BETTER_AUTH_URL}/data.json`);
+    const res = await fetch(`http://localhost:3000/data.json`);
+    // const res = await fetch(`${process.env.BETTER_AUTH_URL}/data.json`);
     const data = await res.json();
 
     const product = data.filter(item => item.id == id)
@@ -30,7 +30,8 @@ const ProductDetails = async ({ params }) => {
                                     <p className='mt-4 text-xl text-gray-600'>Description: {pro.description}</p>
                                     <p className='mt-4 text-gray-600 font-extrabold'>Price: ${pro.price}</p>
                                     <p className='mt-4 text-gray-600 font-bold'>Rating: {pro.rating}</p>
-                                    <div className="card-actions justify-end">
+                                    <div className="card-actions justify-end gap-2">
+                                        <Link href={'/#'}><button className="btn btn-success">Buy</button></Link>
                                         <Link href={'/'}><button className="btn btn-primary">Back</button></Link>
                                     </div>
                                 </div>
