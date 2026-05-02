@@ -4,8 +4,8 @@ import React from 'react';
 
 const ProductDetails = async ({ params }) => {
     const { id } = await params;
-    const res = await fetch(`http://localhost:3000/data.json`);
-    // const res = await fetch(`${process.env.BETTER_AUTH_URL}/data.json`);
+    // const res = await fetch(`http://localhost:3000/data.json`);
+    const res = await fetch(`${process.env.BETTER_AUTH_URL}/data.json`);
     const data = await res.json();
 
     const product = data.filter(item => item.id == id)

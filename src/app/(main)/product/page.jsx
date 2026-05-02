@@ -1,8 +1,8 @@
 import React from 'react';
 import ProductsCards from '@/component/products/ProductsCards';
 const ProductsPage = async () => {
-  const res = await fetch(`http://localhost:3000/data.json`);
-  // const res = await fetch(`${process.env.BETTER_AUTH_URL}/data.json`);
+  // const res = await fetch(`http://localhost:3000/data.json`);
+  const res = await fetch(`${process.env.BETTER_AUTH_URL}/data.json`);
   const data = await res.json();
   return (
     <div className='flex flex-col mx-atuo'>
