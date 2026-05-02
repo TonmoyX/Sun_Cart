@@ -4,7 +4,7 @@ A modern, full-stack e-commerce application built with Next.js 16 and MongoDB, f
 
 ## 🚀 Production Deployment
 
-**Live Application:** [https://sun-cart-aul78crp5-morshed-alam-tonmoy.vercel.app](https://sun-cart-aul78crp5-morshed-alam-tonmoy.vercel.app)
+**Live Application:** [https://sun-cart-ivory.vercel.app](https://sun-cart-ivory.vercel.app)
 
 **Deployed on:** Vercel (Production)
 
