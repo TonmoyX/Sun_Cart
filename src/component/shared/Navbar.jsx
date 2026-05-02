@@ -33,7 +33,7 @@ const Navbar = () => {
                             {user && <li className='font-semibold'><NavLink href='/profile'>My Profile</NavLink></li>}
                         </ul>
                     </div>
-                    <Link href={'/'} className=" text-2xl font-extrabold text-pink-400 flex gap-2 items-center"><FaOpencart className='text-6xl' />Sun<span className='text-purple-500 font-extrabold'>Cart</span></Link>
+                    <Link href={'/'} className=" text-2xl font-extrabold text-pink-400 flex gap-2 items-center"><FaOpencart className='text-6xl'/>Sun<span className='text-purple-500 font-extrabold'>Cart</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu gap-4 menu-horizontal px-1">
